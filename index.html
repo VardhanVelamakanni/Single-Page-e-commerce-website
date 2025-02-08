@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-wdth,initial-scale=1">
+        <title>Simple Webpage</title>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+        
+            html,
+            body {
+                scroll-behavior: smooth;
+                font-family: "poppins",sans-serif;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+            h4{
+                font-family: "poppins",sans-serif;
+            }
+            p{
+                font-family: "poppins",sans-serif;
+
+            }
+            .color-teal{
+                color:teal;
+            }
+            .icon-lg{
+                font-size:50px;
+            }
+            .icon-sm{
+                font-size:25px;
+            }
+            .remove-text-decoration{
+                text-decoration: black;
+            }
+            .remove-bullets{
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body background="assets/pexels-hngstrm-1939485.jpg" >
+        <header>
+            <nav class=" navbar navbar-expand-lg navbar-light bg-light"> 
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <img src="assets/social.png" height="50" alt="Brand logo">
+                        Shopp<span>.ing</span>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar1">
+                        <div class="navbar-nav ms-auto">
+                            <a href="#" class="nav-item nav-link active">Home</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About us</a>
+                                <div class="dropdown-menu">
+                                    <a href="#about-us" class="dropdown-item">Company</a>
+                                    <a href="#team" class="dropdown-item">Team</a>
+                                </div>
+                            </div>
+                            <a href="#contact" class="nav-item nav-link">Contact US</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>  
+            <div id="carousel" class="carousel slide" data-bs-target="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/Screenshot 2024-05-24 200644.png" class="d-block w-100" alt="Carousel 1" style="max-height: 80vh;" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Screenshot 2024-05-24 201658.png" class="d-block w-100" alt="Carousel 2" style="max-height:80vh;" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Screenshot 2024-05-24 202208.png" class="d-block w-100" alt="arousel 3" style="max-height:80vh;" >
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>        
+         </header>
+         <main class="m-5">
+            <section class="container m-4" id="about-us">
+                <h6 class="display-5 text-center">About-us</h6>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="container">
+                            <img src="assets/shopping.gif" class="d-block w-100 " alt="About us" >
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <p class="text-black-50">
+                            Welcome to Shop.ing!                       
+                        </p>
+                        <p >
+                            At Shop.ing, we're revolutionizing your shopping experience by providing a wide range of products with lightning-fast delivery and unbeatable prices. Whether you're looking for fresh groceries, the latest fashion trends, or essential household items, we've got you covered.
+                            Our mission is to bring convenience and savings to your doorstep. With our user-friendly platform, you can effortlessly browse and purchase everything you need, all in one place. We pride ourselves on our commitment to delivering high-quality products promptly, ensuring that you receive your orders when you need them the most.Join the Shop.ing family today and discover a new way to shop smarter, faster, and cheaper. Your satisfaction is our top priority, and we're here to make your shopping journey as seamless and enjoyable as possible.
+                            <br>
+                            Shop.ing - Fast, Affordable, Convenient.
+                        </p>
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <h6 class="display-6 text-center">Why choose Shop.ing?</h6>
+                    <div class="col-md-4">
+                        <div class="container text-center">
+                            <span class="bi bi-basket3 color-black icon-lg"></span>
+                            <p>Faster Delivery</p>
+                            <p>We understand the importance of time, which is why we prioritize speed. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container text-center">
+                            <span class="bi bi-tags color-black icon-lg"></span>
+                            <p>Affordable Prices</p>
+                            <p>We believe that quality products shouldn't come with a hefty price tag.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container text-center">
+                            <span class="bi bi-menu-button-wide color-black icon-lg"></span>
+                            <p>Wide Selection</p>
+                            <p>From fresh produce and pantry staples to the latest fashion and essential home goods, our extensive catalog caters to all your needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container text-center">
+                            <span class="bi bi-person-arms-up color-black icon-lg"></span>
+                            <p>Customer-Centric Service</p>
+                            <p>Our dedicated customer support team is always ready to assist you with any queries or issues, providing a seamless shopping experience from start to finish.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container text-center">
+                            <span class="bi bi-arrow-left-right color-black icon-lg"></span>
+                            <p>Easy Returns and Refunds</p>
+                            <p>If you're not completely satisfied with your purchase, our hassle-free return and refund policy ensures that you can shop with confidence.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container text-center">
+                            <span class="bi bi-shield-check color-black icon-lg"></span>
+                            <p>Safe and Secure Shopping</p>
+                            <p>Your privacy and security are our top priorities. We use the latest encryption technologies to protect your personal and payment information.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="team" class="container m-4">
+                <h6 class="display-5 text-center">Our team</h6>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="card" style="width: 300px;">
+                                <img class="card-img-top" src="assets/9df08d60698405.5a567169b705d.gif">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Sarah Thompson - CEO</h4>
+                                    <p class="card-text">Sarah, with over 15 years in e-commerce, leads Shop.ing with a vision for innovation and customer-centricity. Her strategic leadership drives our mission to provide seamless shopping. Outside work, she enjoys hiking and local markets.</p>
+                                    <i class="bi bi-facebook icon-sm m-2"></i>
+                                    <i class="bi bi-instagram icon-sm m-2"></i>
+                                    <i class="bi bi-linkedin icon-sm m-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="card" style="width: 300px;">
+                                <img class="card-img-top" src="assets/first-impression.gif">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">David Rodriguez - CTO</h4>
+                                    <p class="card-text">David, our tech mastermind, ensures Shop.ing platform is top-notch. With a decade in software development, he focuses on security, speed, and innovation. He loves coding and playing chess in his spare time.</p>
+                                    <i class="bi bi-facebook icon-sm m-2"></i>
+                                    <i class="bi bi-instagram icon-sm m-2"></i>
+                                    <i class="bi bi-linkedin icon-sm m-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="card" style="width: 300px;">
+                                <img class="card-img-top" src="assets/2187c071614535.5bcb5cb2a4495.gif">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Emily Clark - Head of Customer Service</h4>
+                                    <p class="card-text">Emily leads our customer service team with over 12 years of experience. She's dedicated to exceptional customer experiences and constantly seeks improvements. She enjoys volunteering and baking in her free time.</p>
+                                    <i class="bi bi-facebook icon-sm m-2"></i>
+                                    <i class="bi bi-instagram icon-sm m-2"></i>
+                                    <i class="bi bi-linkedin icon-sm m-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="container m-4">
+                <h6 class="display-5 text-center">Contact US</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="container p-3">
+                            <p class="text-muted text-center fs-3">Here's our Contact info</p>
+                            <div class="text-black-s text-center fs-4">our email</div>
+                            <div class="text-black-50 text-center fs-5">Support@example.com</div>
+                            <div class="text-black-s text-center fs-4">our Phone number</div>
+                            <div class="text-black-50 text-center fs-5">+91 1234567891</div>
+                            <div class="text-black-s text-center fs-4">our Address</div>
+                            <div class="text-black-50 text-center fs-5">Street,Lane,Vijayawada<br>Andhra Pradesh XXXX</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container">
+                            <p class="text-muted text-center fs-3">You can also Write us</p>
+                            <div class="container p-3">
+                                <div class="card-shadow">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="name" class="form-label">Enter your name</label>
+                                                <input type="text" class="form-control" name="name" id="name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="emailid" class="form-label">Enter your email</label>
+                                                <input type="email" class="form-control" name="emial" id="emailid">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="subject" class="form-label">Enter the subject</label>
+                                                <input type="text" class="form-control" name="subject" id="subject">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message" class="form-label">Enter your message</label>
+                                                <textarea class="form-control" name="message" id="message"></textarea>
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <input type="submit" class="btn btn-outline-dark" value="Send message">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+         </main>
+         <footer class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="container m-5">
+                            <img src="assets/social.png" height="30px" class="bg-transparent">Shopp<span>.ing</span>
+                            <div>
+                                <p class="text-black">© 2024 QuickShop. All rights reserved.
+
+                                    All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Shop.ing or its content suppliers and is protected by international copyright laws. Unauthorized use or duplication of this material without express and written permission from Shop.ing is strictly prohibited. You may not modify, reproduce, distribute, create derivative works, or use any content from this website for commercial purposes without explicit authorization.
+                                    
+                                    For permissions or inquiries, please contact us at contact@shoping.com.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container m-5">
+                            <p class="text-black fs-5">Quick links</p>
+                            <ul class="remove-bullets remove-text-decoration">
+                                <li><a href="#" class="remove-text-decoration text-black">About-us</a></li>
+                                <li><a href="#" class="remove-text-decoration text-black">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    </body>
+</html>
